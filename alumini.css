@@ -1,0 +1,84 @@
+
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        .custom-checkbox {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            border: 2px solid #d1d5db;
+            background-color: white;
+            transition: all 0.2s ease;
+        }
+        .custom-checkbox.checked {
+            background-color: #4f46e5;
+            border-color: #4f46e5;
+        }
+        .custom-checkbox.checked::after {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 2px;
+            width: 6px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        .custom-switch {
+            position: relative;
+            display: inline-block;
+            width: 48px;
+            height: 24px;
+        }
+        .switch-input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .switch-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #e5e7eb;
+            transition: .4s;
+            border-radius: 24px;
+        }
+        .switch-slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        .switch-input:checked + .switch-slider {
+            background-color: #4f46e5;
+        }
+        .switch-input:checked + .switch-slider:before {
+            transform: translateX(24px);
+        }
+        .hero-section {
+            background-image: url('https://readdy.ai/api/search-image?query=A%20modern%20university%20campus%20with%20beautiful%20architecture%2C%20students%20walking%20and%20talking%2C%20with%20a%20gradient%20from%20light%20blue%20to%20transparent%20on%20the%20left%20side%20to%20allow%20text%20to%20be%20clearly%20visible.%20The%20image%20should%20have%20a%20professional%2C%20clean%2C%20and%20inspiring%20atmosphere%2C%20showing%20diversity%20among%20students.%20The%20left%20side%20should%20have%20a%20clean%20transition%20to%20white%20background%20for%20text%20placement.&width=1600&height=800&seq=12345&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+        }
+   
